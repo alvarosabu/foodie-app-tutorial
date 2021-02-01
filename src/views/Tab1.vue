@@ -2,13 +2,15 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
+        <ion-title>Foodie <span class="text-primary-500">App</span></ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
+          <ion-title size="large"
+            >Foodie <span class="text-primary-500">App</span></ion-title
+          >
         </ion-toolbar>
       </ion-header>
     </ion-content>

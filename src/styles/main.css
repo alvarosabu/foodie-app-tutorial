@@ -1,1 +1,4 @@
-/* Hold globañ styles here */
+/* Hold global styles here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
