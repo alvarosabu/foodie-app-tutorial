@@ -1,6 +1,6 @@
 ![repo-banner](https://res.cloudinary.com/alvarosaburido/image/upload/v1612193118/as-portfolio/Repo_Banner_kexozw.png)
 
-# Foodie App Tutorial
+# Foodie App Tutorial
 
 > This is the repo holding the code used in the **Series: Building a mobile App with Ionic Vue + TailwindCSS** for [youtube] and [dev.to]
 
