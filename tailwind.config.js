@@ -10,6 +10,10 @@ module.exports = {
         secondary: colors.lime,
       },
     },
+    fontFamily: {
+      display: ['GilroyExtraBold'],
+      body: ['Open Sans'],
+    },
   },
   variants: {
     extend: {},

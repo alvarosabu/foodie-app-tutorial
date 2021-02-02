@@ -2,7 +2,9 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Foodie <span class="text-primary-500">App</span></ion-title>
+        <ion-title class="font-display"
+          >Foodie <span class="text-primary-500">App</span></ion-title
+        >
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">

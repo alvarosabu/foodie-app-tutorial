@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/Gilroy-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Gilroy-Light.otf');
+}
