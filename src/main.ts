@@ -13,7 +13,9 @@ import '@ionic/vue/css/structure.css';
 import '@ionic/vue/css/typography.css';
 
 /* Theme variables */
+import './styles/fonts.css';
 import './theme/variables.css';
+
 import './styles/main.css';
 
 const app = createApp(App)

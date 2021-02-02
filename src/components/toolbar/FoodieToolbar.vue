@@ -1,7 +1,9 @@
 <template>
   <ion-header :collapse="collapse">
     <ion-toolbar>
-      <ion-title>Foodie <span class="text-primary-500">App</span></ion-title>
+      <ion-title class="font-display"
+        >Foodie <span class="text-primary-500">App</span></ion-title
+      >
     </ion-toolbar>
   </ion-header>
 </template>

@@ -19,7 +19,6 @@
 </template>
 
 <script lang="ts">
-import { Ref, ref } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonIcon, IonPage } from '@ionic/vue';
 import { homeOutline, pizzaOutline, locationOutline } from 'ionicons/icons';
 
