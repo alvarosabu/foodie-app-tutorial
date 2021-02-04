@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "popular": true,
+        "media": "assets/pizza.png",
+        "favorite": false
+    },
+    {
+        "id": 2,
+        "name": "Chilli",
+        "popular": false,
+        "media": "assets/chilli.png",
+        "favorite": false
+    }
+]
