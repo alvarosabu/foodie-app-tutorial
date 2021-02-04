@@ -4,13 +4,39 @@
         "name": "Pizza",
         "popular": true,
         "media": "assets/pizza.png",
-        "favorite": false
+        "favorite": false,
+        "color": "yellow"
     },
     {
         "id": 2,
         "name": "Chilli",
         "popular": false,
         "media": "assets/chilli.png",
-        "favorite": false
+        "favorite": false,
+        "color": "red"
+    },
+    {
+        "id": 3,
+        "name": "Salad",
+        "popular": true,
+        "media": "assets/salad.png",
+        "favorite": false,
+        "color": "green"
+    },
+    {
+        "id": 4,
+        "name": "Basil",
+        "popular": false,
+        "media": "assets/basil.png",
+        "favorite": false,
+        "color": "green"
+    },
+    {
+        "id": 5,
+        "name": "Tuna",
+        "popular": false,
+        "media": "assets/tuna.png",
+        "favorite": false,
+        "color": "gray"
     }
 ]

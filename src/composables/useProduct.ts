@@ -9,6 +9,7 @@ export interface Product {
   popular: boolean;
   media: string;
   favorite: boolean;
+  color: string;
 }
 export default function useProduct() {
   const products: Ref<Product[]> = ref([]);
@@ -26,9 +27,20 @@ export default function useProduct() {
       loading.value = false;
     }, 1000);
   }
+
+  const popularProducts = computed(() =>
+    products.value.filter(product => product.popular),
+  );
+
+  const regularProducts = computed(() =>
+    products.value.filter(product => !product.popular),
+  );
+
   return {
     loading: computed(() => loading.value),
     products,
     fetchProducts,
+    popularProducts,
+    regularProducts,
   };
 }

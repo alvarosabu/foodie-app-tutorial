@@ -3,7 +3,7 @@
     <div
       class=" w-full absolute top-0 left-0 h-full flex flex-col items-center justify-between pb-4"
     >
-      <ion-img :src="product.media" class="media mx-auto h-auto" />
+      <ion-img :src="product.media" class="w-full media mx-auto h-auto" />
       <ion-label class="font-display font-bold">{{ product.name }}</ion-label>
     </div>
   </ion-card>
@@ -33,7 +33,7 @@ export default defineComponent({
       'product-card',
       `product-card--${props.size}`,
       'p-2',
-      'bg-gray-200',
+      `bg-${props.product?.color}-100`,
       'relative',
     ]);
 
@@ -48,12 +48,12 @@ export default defineComponent({
   padding-top: 75%;
   overflow: unset;
 }
-.product-card--md.media {
-  width: 75%;
+.product-card--md .media {
+  max-height: 150px;
 }
 
-.product-card--sm.media {
-  min-height: 150px;
+.product-card--sm .media {
+  max-height: 120px;
 }
 
 .media {

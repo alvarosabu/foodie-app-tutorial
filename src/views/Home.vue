@@ -4,17 +4,19 @@
     <ion-content :fullscreen="true">
       <FoodieToolbar :collapse="'condense'" />
       <ion-progress-bar type="indeterminate" color="primary" v-show="loading" />
-      <div class="popular">
-        <ion-slides class="row p-4" :options="popularSlideOpts">
-          <ion-slide v-for="product in products" :key="product.id">
+      <div class="popular p-4 mb-8">
+        <h2 class="font-display text-gray-600 pl-2 mb-4">Popular 🤩</h2>
+        <ion-slides :options="popularSlideOpts">
+          <ion-slide v-for="product in popularProducts" :key="product.id">
             <ProductCard :product="product" />
           </ion-slide>
         </ion-slides>
       </div>
-      <div class="products">
-        <ion-slides class="row p-4" :options="productsSlideOpts">
-          <ion-slide v-for="product in products" :key="product.id">
-            <ProductCard :product="product" />
+      <div class="products p-4">
+        <ion-searchbar class="searchbar py-0"></ion-searchbar>
+        <ion-slides class="" :options="productsSlideOpts">
+          <ion-slide v-for="product in regularProducts" :key="product.id">
+            <ProductCard :product="product" :size="'sm'" />
           </ion-slide>
         </ion-slides>
       </div>
@@ -51,10 +53,29 @@ export default {
     const productsSlideOpts = {
       slidesPerView: 2.5,
     };
-    const { loading, products, fetchProducts } = useProduct();
+    const {
+      loading,
+      popularProducts,
+      regularProducts,
+      fetchProducts,
+    } = useProduct();
     fetchProducts();
 
-    return { loading, products, popularSlideOpts, productsSlideOpts };
+    return {
+      loading,
+      popularProducts,
+      regularProducts,
+      popularSlideOpts,
+      productsSlideOpts,
+    };
   },
 };
 </script>
+
+<style>
+.searchbar {
+  --border-radius: 10px;
+  --background: theme('colors.primary.100');
+  --box-shadow: none;
+}
+</style>
